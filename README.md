@@ -1,12 +1,12 @@
-## Explainable Multimodal Intent Detection for Task-oriented Dialogue Systems
+# Explainable Multimodal Intent Detection for Task-oriented Dialogue Systems
 
-# Description 
+## Description 
 
 This project implements a **Multimodal Transformer (MulT)** based framework for **spoken language intent detection** using the [MInDS-14 dataset](https://huggingface.co/datasets/PolyAI/minds14).  
 The goal is to compare **unimodal (text-only, audio-only)** and **bimodal (text+audio)** setups, and evaluate how accuracy, F1, and error metrics vary across modalities.
 Additionaly, attention plots reveal the learnt modality alignment as well as feature importance on the classification
 
-# Repository Structure
+## Repository Structure
 - extract_features.py
   - Extract and save text and audio features used downstream.
   - Key functions:
@@ -37,7 +37,7 @@ Additionaly, attention plots reveal the learnt modality alignment as well as fea
   - src/arch.py — `MULTModel`, the multimodal model architecture from original paper suited for this usecase
   - src/dataset.py — dataset class used to feed variable-length text/audio entries to the DataLoader.
 
-# Basic usage (terminal) 
+## Basic usage (terminal) 
 
 1. Clone the repository via https://github.com/saniaserrao/mmxai.git
 
