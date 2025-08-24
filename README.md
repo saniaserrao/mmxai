@@ -68,4 +68,18 @@ python main.py --dataset minds14 --data_path  data/minds14_features/ --batch_siz
 # both flags provided or no flags provided runs the model in the bimodal case
 ```
 
+## Acknowledgements
+
+Model Architecture adopted from 
+
+@inproceedings{tsai2019MULT,
+  title={Multimodal Transformer for Unaligned Multimodal Language Sequences},
+  author={Tsai, Yao-Hung Hubert and Bai, Shaojie and Liang, Paul Pu and Kolter, J. Zico and Morency, Louis-Philippe and Salakhutdinov, Ruslan},
+  booktitle={Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month = {7},
+  year={2019},
+  address = {Florence, Italy},
+  publisher = {Association for Computational Linguistics},
+}
+
 
