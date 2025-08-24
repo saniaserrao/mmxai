@@ -36,6 +36,7 @@ Additionaly, attention plots reveal the learnt modality alignment as well as fea
   - src/logger.py - `CSVLogger` used to log training metrics and plot history.
   - src/arch.py - `MULTModel`, the multimodal model architecture from original paper suited for this usecase
   - src/dataset.py - dataset class used to feed variable-length text/audio entries to the DataLoader.
+  - src/train.py - runs training and evaluation loops 
 
 ## Basic usage (terminal) 
 
