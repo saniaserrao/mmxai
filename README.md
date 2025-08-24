@@ -10,9 +10,9 @@ Additionaly, attention plots reveal the learnt modality alignment as well as fea
 - extract_features.py
   - Extract and save text and audio features used downstream.
   - Key functions:
-    - `extract_linguistic_features` — BERT Tokenizer to extract linguistic embeddings of shape (seq_len, 768).
-    - `extract_acoustic_features` — produces Mel spectrograms for audio files of shape (seq_len, 80).
-    - `process_and_save_dataset` —  performs data transformation where in feature vectors are saved in (minds14.pkl).
+    - `extract_linguistic_features` - BERT Tokenizer to extract linguistic embeddings of shape (seq_len, 768).
+    - `extract_acoustic_features` - produces Mel spectrograms for audio files of shape (seq_len, 80).
+    - `process_and_save_dataset` -  performs data transformation where in feature vectors are saved in (minds14.pkl).
 - prep_data.py
   - Prepare the MInDS-14 CSV dataset for processing (assemble English files, encode labels, split into train/test/val).
 - main.py
@@ -24,18 +24,18 @@ Additionaly, attention plots reveal the learnt modality alignment as well as fea
   - modules/transformers.py
 - notebooks/ 
   - Simple visualizations of data explorations 
-  - notebooks/feature_extract.ipynb — example runs of `extract_features.py` logic.
-  - notebooks/eda.ipynb — exploratory data analysis.
-- plots/ — saved training/experiment plots.
+  - notebooks/feature_extract.ipynb - example runs of `extract_features.py` logic.
+  - notebooks/eda.ipynb - exploratory data analysis.
+- plots/ - saved training/experiment plots.
   - Training and Validation Losses against epochs curve
   - Variation of performance metrics (F1, accuracy across epochs)
-- pretrained_models/ — saved model checkpoints (.pt).
-- results/ — run logs / CSV outputs created by experiments.
+- pretrained_models/ - saved model checkpoints (.pt).
+- results/ - run logs / CSV outputs created by experiments.
 - src/
-  - src/utils.py — helper utilities for dataset loading and model save/load (`get_data`, `save_model`, `load_model`).
-  - src/logger.py — `CSVLogger` used to log training metrics and plot history.
-  - src/arch.py — `MULTModel`, the multimodal model architecture from original paper suited for this usecase
-  - src/dataset.py — dataset class used to feed variable-length text/audio entries to the DataLoader.
+  - src/utils.py - helper utilities for dataset loading and model save/load (`get_data`, `save_model`, `load_model`).
+  - src/logger.py - `CSVLogger` used to log training metrics and plot history.
+  - src/arch.py - `MULTModel`, the multimodal model architecture from original paper suited for this usecase
+  - src/dataset.py - dataset class used to feed variable-length text/audio entries to the DataLoader.
 
 ## Basic usage (terminal) 
 
