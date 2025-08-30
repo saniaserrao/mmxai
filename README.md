@@ -10,7 +10,7 @@ Additionaly, attention plots reveal the learnt modality alignment as well as fea
 - extract_features.py
   - Extract and save text and audio features used downstream.
   - Key functions:
-    - `extract_linguistic_features` - BERT Tokenizer to extract linguistic embeddings of shape (seq_len, 768).
+    - `extract_linguistic_features` - LaBSE Tokenizer to extract linguistic embeddings of shape (seq_len, 768).
     - `extract_acoustic_features` - produces Mel spectrograms for audio files of shape (seq_len, 80).
     - `process_and_save_dataset` -  performs data transformation where in feature vectors are saved in (minds14.pkl).
 - prep_data.py
